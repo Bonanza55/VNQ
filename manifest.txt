@@ -1,0 +1,2 @@
+Main-Class: vnq
+Class-Path: . mail.jar activation.jar commons-net-3.6.jar

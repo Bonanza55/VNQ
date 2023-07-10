@@ -1,0 +1,18 @@
+To send a message:
+
+1) Type a message on screen, or open a text file. 
+2) Select <Post Msg> or <Email Msg> from <Send>
+   2a) Post sends your message to the message server 
+       in a queue to be picked up. The message should 
+       to goto a valid mailbox.
+   2b) Email will email to an actual email address. 
+       There is no way to recieve an email however, 
+       it is only one way. 
+   2c) To encrypt, select <Encrypt> from <File>
+   2d) Encryption is not mandatory. 
+   2e) You can override default passkey from <Tools>
+       This is useful if you have a secret key you 
+       share with another person. Do this first before
+       encrypting. 
+
+

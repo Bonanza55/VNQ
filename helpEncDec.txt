@@ -1,0 +1,24 @@
+To encrypt / decrypt a message:
+
+SECRET KEY / DEFAULT KEY
+
+Select <Pass Key> from <Tools> and enter
+a SECRET pass key berore encrypting. This 
+will remain set until you exit. If you do
+nothing then the pass key DEFAULTs to the 
+key found in vnq.properties. You should
+not change this. 
+
+1) Type a message on the text window or open a text 
+   file by clicking on <Open> from <File>.
+2) Click on <Encrypt> from <File> to encrypt message.
+   You only do this once. This will encrypt with the
+   default or secrect key if you set it. 
+3) Click on <Decrypt> from <File> to decrypt message.
+   You only do this once. This will encrypt with the
+   default or secrect key if you set it. 
+
+NOTE:
+You and another person have to have set the same secret
+key during the session for the encrypt/decrypt to work. 
+
