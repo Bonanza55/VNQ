@@ -233,7 +233,7 @@ public vnq() {
     setVisible(true);
     File ff = new File(PROPFILE);
     if(!ff.exists() && !ff.isDirectory()) { 
-      ta.setText("It looks like you have not setup your mailbox?\n\nSelect <File> <Setup Mailbox>, enter a valid email address, or firstname.lastname if you dont have email, then press Make.\n\nThis will take about 10 seconds then you can start sending messages.");
+      ta.setText("You have not setup your mailbox.\n\nSelect <File> <Setup Mailbox>; enter firstname.lastname or your secret agent name (i.e., deepthroat), then press Make.\n\nThis will take about 10 seconds then you can start sending messages.");
     }
 } 
 
@@ -778,7 +778,7 @@ public void actionPerformed(ActionEvent e) {
        JFrame appFrame = new JFrame("Print Message");
        cPane = appFrame.getContentPane();
        cPane.setLayout(new BorderLayout());
-       appFrame.setSize(200,100);
+       appFrame.setSize(200,75);
        appFrame.setResizable(true);
        appFrame.setLocationRelativeTo(null);
        appFrame.setVisible(true);
@@ -786,9 +786,10 @@ public void actionPerformed(ActionEvent e) {
           public void windowClosing(WindowEvent e) {
        }
        });
-       JButton printButton = new JButton("Print");
+       JButton printButton = new JButton("PRINT");
        printButton.addActionListener(new vnqPrint());
        appFrame.add("Center", printButton);
+       appFrame.getRootPane().setDefaultButton(printButton);
        appFrame.setVisible(true);
     }
 
